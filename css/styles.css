@@ -1,0 +1,90 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    margin: 30px;
+    font-family: "Lobster", cursive;
+    text-shadow: 5px 0 palevioletred;
+    font-size: 4.5rem;
+    color: #232931;
+    text-align: center;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.rcp {
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+}
+
+p {
+    font-size: 2rem;
+    color: black;
+    font-family: "Indie Flower", cursive;
+}
+
+img {
+    width: 100%;
+}
+
+.bottom {
+    padding-top: 30px;
+}
+
+.butn {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid#2329;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: palevioletred2;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+.butn:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: palevioletred;
+    z-index: -1;
+}
+
+.butn:hover,
+button:focus {
+    color: white;
+}
+
+.butn:hover:before,
+button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.butn:active {
+    transform: scale(0.9);
+}
+
+footer {
+    margin-top: 100px;
+}
